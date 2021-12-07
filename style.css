@@ -1,0 +1,187 @@
+@font-face {
+    font-family: 'Morro';
+    src: url('./assets/fonts/Morro-Regular.woff2') format('woff2'),
+        url('./assets/fonts/Morro-Regular.woff') format('woff'),
+        url('./assets/fonts/Morro-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+}
+
+.content {
+    margin-left: 300px;
+
+    background-color: #dbd4c2;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.content-text {
+    margin-left: 10px;
+}
+
+
+/* SideBar */
+
+.sidebar-grid {
+    z-index: 1;
+
+    background-color: #2f595c;
+    
+    margin: 0;
+    
+    height: 100%;
+    width: 300px;
+    
+    overflow: hidden;
+    position: fixed;
+    
+    display: grid;
+    
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+    font-family: 'Morro';
+
+    outline: 5px solid #e1c9b9;
+    outline-offset: -5px;
+}
+
+.sidebar-grid a {
+    color:#e1c9b9;
+    
+    font-size: 40px;
+    text-align: center;
+    vertical-align:middle;
+
+    text-decoration: none;
+
+    bottom: 0;
+}
+
+.sidebar-grid a:hover {
+    color:#532622;
+}
+
+.logo{
+    grid-column: 1;
+    grid-row: 1;
+
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar-link1 {
+    grid-column: 1;
+    grid-row: 2;
+
+    margin-left: 0;
+    margin-top: 11px;
+
+    align-items: center;
+}
+
+.sidebar-link2 {
+    grid-column: 1;
+    grid-row: 3;
+    
+    margin-left: 0;
+    margin-top: 11px;
+
+    align-items: center;
+}
+
+.sidebar-link3 {
+    grid-column: 1;
+    grid-row: 4;
+
+    margin-left: 0;
+    margin-top: 11px;
+
+    align-items: center;
+}
+
+
+/* DIVISION SLIDESHOW */
+
+.contenedor{
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider-contenedor{
+    width: 100%;
+    display: flex;
+}
+
+.contenido-slider{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.contenido-slider:nth-child(1){
+    background-image: url("./assets/img/nerdo.jpg");
+    background-size: cover;
+    outline: 10px solid #532622;
+    outline-offset: -10px;
+}
+
+.contenido-slider:nth-child(2){
+    background-image: url("./assets/img/ciudad2.png");
+    background-size: cover;
+    outline: 10px solid #532622;
+    outline-offset: -10px;
+}
+
+.contenido-slider:nth-child(3){
+    background-image: url("./assets/img/vasos.jpg");
+    background-size: cover;
+    outline: 10px solid #532622;
+    outline-offset: -10px;
+}
+
+.contenido-slider:nth-child(4){
+    background-image: url("./assets/img/ciudad1.png");
+    background-size: cover;
+    outline: 10px solid #532622;
+    outline-offset: -10px;
+}
+
+
+/* VISUALIZADOR DE MODELO */
+
+#model {
+    z-index: -1;
+    width: 100%;
+    height: 500px;
+    background: #20a4ad;
+    margin: 0;
+    padding: 0;
+
+    outline: 10px solid #532622;
+    outline-offset: -10px;
+}
+
+
+/* FOOTER */
+
+#footer {
+    background-color: #532622;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #e1c9b9;
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#footer a {
+    color: #20a4ad;
+}
